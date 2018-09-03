@@ -1,7 +1,9 @@
-const MongoClient = require('mongodb').MongoClient;
+const { MongoClient, ObjectID } = require('mongodb');
 
 const url = `mongodb://localhost:27017`;
 const db_option = { useNewUrlParser: true };
+const obj = new ObjectID();
+console.log(`New Obj: ${obj}`);
 
 MongoClient.connect(url, db_option, (err, client) => {
   if (err) {
