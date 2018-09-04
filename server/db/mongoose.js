@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+var mongoose = require('mongoose');
 const url = `mongodb://localhost:27017/todoApp`;
 
 mongoose.Promise = global.Promise;
